@@ -1,0 +1,15 @@
+{
+  "name": "net.narazaka.unity.shaderdxt",
+  "version": "1.0.0",
+  "displayName": "ShaderDXT",
+  "description": "DXT1 compress/decompress by Shader",
+  "author": {
+    "name": "Narazaka",
+    "url": "https://github.com/Narazaka"
+  },
+  "type": "tool",
+  "url" : "https://github.com/Narazaka/ShaderDXT.git",
+  "vpmDependencies": {
+    "net.narazaka.unity.shadervalueio": "^2.0.0"
+  }
+}
