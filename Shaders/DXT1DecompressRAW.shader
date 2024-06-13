@@ -44,9 +44,9 @@
                 return o;
             }
 
-            fixed3 frag(v2f i) : SV_Target
+            float4 frag(v2f i) : SV_Target
             {
-                return DecodeDXT1(NormalizedToBlock(UVColor(i.uv)), i.uv);
+                return float4(DecodeDXT1(NormalizedToBlock(UVColor(i.uv)), i.uv), 1);
             }
             ENDCG
         }

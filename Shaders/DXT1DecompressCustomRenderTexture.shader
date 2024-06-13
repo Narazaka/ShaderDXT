@@ -37,9 +37,9 @@
 
             #include "DXT1.cginc"
 
-            fixed3 frag(v2f_customrendertexture i) : SV_Target
+            float4 frag(v2f_customrendertexture i) : SV_Target
             {
-                return DecodeDXT1(ShaderValueIO::DecodeToUint(i.localTexcoord.xy), i.localTexcoord.xy);
+                return float4(DecodeDXT1(ShaderValueIO::DecodeToUint(i.localTexcoord.xy), i.localTexcoord.xy), 1);
             }
             ENDCG
         }
